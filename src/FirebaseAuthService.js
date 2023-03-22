@@ -15,11 +15,11 @@ const logoutUser = () => {
 }
 
 const sendPasswordResetEmail = (email) => {
-    return auth. sendPasswordResetEmail(email);
+    return auth.sendPasswordResetEmail(email);
 }
 
 const loginWithGoogle = () => {
-    const provider = new firebase.auth.GoogleAuthProvider;
+    const provider = new firebase.auth.GoogleAuthProvider();
 
     return auth.signInWithPopup(provider);
 }
